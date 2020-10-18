@@ -25,8 +25,6 @@ export class MapComponent {
   constructor(private router: Router) {}
 
   public openModal(): void {
-    this.router.navigate(['map', {outlets: {['map-outlet']: ['modal']}}], {
-      queryParamsHandling: 'merge',
-    });
+    this.router.navigate(['map', {outlets: {['map-outlet']: ['modal']}}]);
   }
 }

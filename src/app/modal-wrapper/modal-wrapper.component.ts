@@ -35,9 +35,7 @@ export class ModalWrapperComponent implements OnInit, OnDestroy {
         if (this.closedOnDestroy) {
           return;
         }
-        return this.router.navigate(['map'], {
-          queryParamsHandling: 'merge',
-        });
+        return this.router.navigate(['map']);
       });
   }
 
