@@ -23,11 +23,7 @@ export class ModalWrapperComponent implements OnInit, OnDestroy {
   }
 
   private openDialog(): void {
-    this.dialogRef = this.dialog.open(ModalComponent,
-      {
-        minWidth: '700px',
-        minHeight: '400px'
-      });
+    this.dialogRef = this.dialog.open(ModalComponent);
 
     this.dialogRef.afterClosed()
       .pipe(take(1))
