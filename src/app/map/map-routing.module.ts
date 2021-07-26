@@ -5,11 +5,11 @@ import { MapComponent } from './map.component';
 const routes: Routes = [
   {
     path: '',
-    outlet: 'map-outlet',
     component: MapComponent,
     children: [
       {
         path: 'modal',
+        outlet: 'map-outlet',
         loadChildren: () => import('../modal-wrapper/modal-wrapper.module')
           .then((m) => m.ModalWrapperModule),
       },
